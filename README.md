@@ -1,13 +1,17 @@
-# NOTE STILL IN PROGRESS, NO OUTPUT YET
+#⚠️ Note: Project is in active development. Full output files not yet implemented.
 
-## AdressBuilderSCADA
+##AdressBuilderSCADA
+Small utility to generate SCADA CSV and CODESYS ST code from a user-defined variable list.
 
-## Desctiption
-Small project to build SCADA CSV based on user's input CSV.
-Ment to be used with Simplight SCADA and AGAVA PLC (Codesys 3.5.14 P3-P4)
+##Purpose
+Takes a CSV with variables (Name, Data Type, Description) and produces:
+A Modbus register map for Simplight SCADA
+Assignment code (RegHoldingBuf[N] := var;) for AGAVA PLC (CODESYS 3.5.14 P3-P4)
 
-## How to use?!
-1) Fill all collums:
-   Name | Data | Type | Description
-2) Run exe
-3) Output???
+##How to use
+1) Prepare input CSV with columns: Name,Data Type,Description
+Example: Motor_Start,BOOL,Start command for main drive motor
+2) Run the executable (AdressBuilderSCADA.exe)
+3) Output is printed to console.
+(SCADA CSV export — coming soon)
+(ST code block — coming soon)
