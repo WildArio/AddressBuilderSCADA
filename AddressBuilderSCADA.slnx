@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="AdressBuilderSCADA/AdressBuilderSCADA.vcxproj" Id="e4c6c6bc-fd00-4dc3-a675-45a8a53e405b" />
+</Solution>
