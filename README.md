@@ -1,6 +1,9 @@
 # ⚠️ Note: 
 Project is in development. Full output files not yet implemented.
 
+# DL TEST RELEASE:
+[Click to open the test release page.](https://github.com/WildArio/AddressBuilderSCADA/releases/tag/Test)
+
 ## AdressBuilderSCADA
 Small utility to generate SCADA CSV and CODESYS ST code from a user-defined variable list.
 
