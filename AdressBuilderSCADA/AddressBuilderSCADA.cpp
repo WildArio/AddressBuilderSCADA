@@ -8,6 +8,7 @@
 
 int main()
 {
+    bool success = false;
     try {
         auto file = OpenCsv("data.csv");
         auto parsedCsv = ParseCsv(file);
@@ -26,6 +27,7 @@ int main()
             std::cout << "ST code generated and added: " + newStLine << std::endl;
             std::cout << "________________________________" << std::endl;
         }
+        success = true;
     }
     catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
@@ -35,5 +37,8 @@ int main()
         return 1;
     }
 
-    return 0;
+    std::cout << "\nPress ENTER to exit...";
+    std::cin.get();
+
+    return success ? 0 : 1;
 }
